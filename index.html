@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.a0224{
+height: 47px;
+Width: 66px;
+color: Grey;
+background: White;
+border-radius: 7px;
+}
+.a0224:hover{
+background: #2894FF;
+color: White;
+}
+input:focus{
+outline:none;
+}
+.a1 {
+height: auto; /*正文部分盒子的总高度*/
+background: linear-gradient(
+90deg , #fff5EE , #C0C0C0
+);;}
+.a2 {
+height: 100px; /*正文部分盒子的总高度*/
+background: linear-gradient(
+90deg , #fff5EE , #C0C0C0
+);;}
+.a3{
+height: auto; /*“关于本站”部分*/
+background: url(images/a1551.jpg) ; 
+background-size:cover;
+color: White;
+}
+.button2 {
+height: auto;
+width: 97% ;
+margin-left: 1.5%; 
+margin-top: 6%;
+margin-Bottom: -2%;
+line-height: 250%;
+border-radius: 7px;
+background:
+linear-gradient(
+90deg ,#C0C0C0, #fff5EE 
+);;
+color: Grey;
+border-width: none;
+border-color: none;
+box-shadow: 1px 1px 1px #888888;
+}
+.button2:hover {
+height: auto;
+width: 97.1% ;
+margin-left: 1.5%; 
+margin-top: 6%;
+margin-Bottom: -2%;
+line-height: 250%;
+border-radius: 9px;
+color: White;
+border-width: 2px;
+border-color: White;
+box-shadow: 8px 8px 8px #888888;
+background: 
+linear-gradient(
+90deg, #e8e8e8 ,Orange)
+;}
+.h1542 {
+font-size: 20px;
+color: #686868;
+padding-top: 29px;
+padding-left: 12px;
+font-weight: 500em;
+font-weight: bold;
+}
+.img11 {
+height: 62px;
+width: 65px;
+border-radius: 90%;
+float: left; 
+margin-top: 3px; 
+}
+.b{
+float: left; 
+margin-top: 8px; 
+margin-left: 15px; 
+}
+.p2{
+float: left; 
+margin-top: 29px; 
+margin-left: -64px; 
+}
+#searchInput{
+height: 47px; 
+site: centre auto; 
+color: Grey; 
+width: 70%; 
+margin-left: 5%; 
+border-radius: 7px;
+border: 0px;
+)}
+#searchInput:hover{
+height: 47px; 
+site: centre auto; 
+color: Grey; 
+width: 70%; 
+margin-left: 5%; 
+border-radius: 7px;
+border: 1px solid White;
+background: linear-gradient(
+180deg , #fff5EE, #C0C0C0
+)}
+
+.a4{
+color: black;
+background: White;
+}
+</style> 
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+ <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" /> 
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+  <title>YAJUN.INK</title>
+  <!-- 网页标题名称 -->
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="css/font-awesome.min.css" rel="stylesheet" />
+  <link href="css/style.css" rel="stylesheet" />
+  <link href="css/responsive.css" rel="stylesheet" />
+</head>
+<body>
+  <div class="hero_area">
+    <div class="hero_bg_box">
+      <img src="images/hero-bg.jpg" alt="">
+    </div>
+    <header class="header_section">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg custom_nav-container ">
+          <a class="navbar-brand " href="  #  ">
+            <span>
+              YAJUN<span style="color: Orange;">.</span><!--网页标题-->
+            </span> 
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class=""> </span>
+          </button>
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav  ">
+              <li class="nav-item active">
+<!--下面是下拉菜单部分-->
+               
+              <li class="nav-item">
+                <a class="nav-link" href="  #h4  ">关于本站</a>
+              </li>
+<!--下面是下拉菜单中的搜索图片部分-->
+                <form class="form-inline justify-content-center">
+                <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit">
+                  <i class="fa fa-search" aria-hidden="true"></i> 
+                </button>
+              </form>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header> 
+<!--上面是下拉菜单部分-->
+<section class="slider_section ">
+
+<!--下面是百度搜索框部分-->
+<body>
+    <div class="container">
+        <div class="parent">
+            <input  id="searchInput" type="text" onkeypress="if (event.keyCode == 13) showResult();" onkeydown="entersearch(event)" placeholder="请输入搜索内容"/>
+            <input id="btn22" type="button" onclick="to()" value="百度" class="a0224"/>
+        </div>
+    </div>
+</body>
+<script type="text/javascript">
+    function jumpPage(searchValue) {
+      window.location.href="http://www.baidu.com/s?ie=UTF-8&wd="+searchValue;
+    }
+    // 按Enter键,执行事件
+    function entersearch(event){
+        if (event.keyCode == 13)
+        {
+            to();
+        }
+    }
+    // 按钮点击触发函数
+    function to(){
+        var searchValue = document.getElementById("searchInput").value;
+        //window.location.href="http://www.baidu.com/s?ie=UTF-8&wd="+searchValue;
+       jumpPage(searchValue);
+       //alert(searchValue);
+    }
+</script>
+<!--上面是百度搜索框部分-->
+</section>
+</div>
+<div class="a1">
+<h1 class="h1542"> &#10063 网盘搜索.</h1>
+
+<a href="#"><button class="button2">
+<img src="images/ns.jpg" class="img11"/>
+<b class="b">奈斯搜索</b>
+<p2 class="p2">阿里云盘资源搜索工具</p2>
+</button></a>
+
+
+
+网站建设中…………
+
+
+
+
+<div class="a2"></div>
+<!--上面是正文内容部分-->
+<div class="a3">
+<h4 id="h4">关于本站</h4>
+<p>个人网站（Yajun.ink）：
+<br/>
+本站提供各类优秀网站导航，包括但不限于网盘搜索类、影视相关类、学习办公类、软件工具类。<br/>
+<br/>
+友情提示：
+<br/>
+1.离开本站后所产生的一系列法律问题均与本站无关，由访问者自行承担。
+<br/>
+<br/>
+2.本站部分图文来自互联网，如有侵权，请联系站长删除。
+</p>
+</div>
+
+
+
+<div class="a4"><p5>Copyright © Yajun.ink 2022<p5></div>
+
+
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/custom.js"></script>
+<script src="test.js"></script>
+</body>
+</html>
