@@ -1,0 +1,409 @@
+<!doctype html>
+<html lang="zxx">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="static/css/bootstrap.min.css">
+<link rel="stylesheet" href="static/css/fontawesome.min.css">
+<link rel="stylesheet" href="static/css/style.css">
+<link rel="stylesheet" href="static/css/responsive.css">
+
+<title>Yajun的网站收藏夹</title>
+
+</head>
+<body data-spy="scroll" data-offset="120">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<div class="container-fluid">
+<div class="logo">
+
+<a href="index.html">
+<h3>Yajun<span style="color: Orange">.</span></h3>
+</a>
+
+</div>
+
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+<ul class="navbar-nav">
+<hr/>
+
+<li class="nav-item">
+<a href="#wpss" class="nav-link" style="Font-size: 18px;color:Grey">
+网盘搜索
+</a>
+</li>
+
+<li class="nav-item">
+<a href="#ysxg" class="nav-link" style="Font-size: 18px;color:Grey">
+影视相关
+</a>
+</li>
+
+<li class="nav-item">
+<a href="#bgzy" class="nav-link" style="Font-size: 18px;color:Grey">
+办公资源
+</a>
+</li>
+
+
+<!--下拉菜单搜索部分-->
+<br/>
+ <div class="container">
+		<!-- form表单回车刷新，不能触发跳转页面，所以改为div-->
+        <div class="parent">
+            <input  placeholder="请输入您需要搜索的内容" id="searchInput" type="text" onkeypress="if (event.keyCode == 13) showResult();" onkeydown="entersearch(event)"/><input id="btn22" type="button" onclick="to()" value="百 度"/>
+        </div>
+    </div>
+<br/>
+</ul>
+</div>
+</div>
+</nav>
+<style>
+
+  .container {
+                width: -1px;
+                height: 50px;
+                margin: 5px auto;
+            }
+            .parent {
+                width: 90%;
+                height: 42px;
+                top: 4px;
+                position: relative;
+            }
+            .parent>input:first-of-type {
+                /*输入框高度设置为40px, border占据2px，总高度为42px*/
+                width: 1px;
+                height: 40px;
+                border: 1px solid #ccc;
+                font-size: 16px;
+                outline: none;
+            }
+            .parent>input:first-of-type:focus {
+                border: 1px solid #317ef3;
+                padding-left: 15px;
+            }
+            .parent>input:last-of-type {
+                /*button按钮border并不占据外围大小，设置高度42px*/
+                width: 60px;
+                height: 44px;
+                position: absolute;
+                background: #317ef3;
+                border: 1px solid #317ef3;
+                color: #fff;
+                font-size: 12px;
+                outline: none;
+            }
+
+.bt1{
+font-size: 35px;
+}
+.bt1:hover{
+font-size: 35px;
+color: Orange;
+}
+
+#searchInput{
+width: 258px; 
+height: 45px; 
+background: White;
+border-color: #c0c0c0;
+}
+#searchInput:hover{
+width: 258px; 
+height: 45px; 
+background: White;
+border-color: #0d6efd;
+}
+
+Placeholder{
+width: 258px; 
+height: 45px; 
+background: White;
+border-color: Blue;
+}
+input::-webkit-input-placeholder{
+color: Grey;
+Font-size: 10px;
+}
+
+#xlcdtb{
+background: Transparent;
+color: Grey;
+}
+#xlcdtb:hover{
+background: Transparent;
+color: red;
+transform: rotateZ(180deg);
+}
+
+.nrdiv1{
+background-color: #FFFFFF;
+margin-left: 10px;
+margin-top: 5px;
+width: 95%;
+height: 75px;
+box-shadow: 0px 0px 1px 0px #404040;
+border-radius: 5px;
+}
+
+.nrdiv1:hover{
+background-color: #f0f0f0;
+margin-left: 10px;
+margin-top: 5px;
+width: 95.5%;
+height: 77px;
+box-shadow: 1px 1px 3px 0px #404040;
+border-radius: 5px;
+transition: all .2s linear;
+}
+
+.jsdiv1629{
+color: Grey;
+Font-size: 10px;
+text-align:center ;
+}
+
+.btbt1{
+margin-left: 10px; 
+margin-top: 2px;
+font-size: 19px;
+font-weight: bold;
+color: Grey;
+}
+
+#nrbt{
+color: Grey;
+Font-size: 15px;
+font-weight: bold;
+margin-left: 10px;
+line-height: 6px;
+}
+#nrjs{
+color: Grey;
+Font-size: 13px;
+margin-left: 39px;
+line-height: 15px;
+}
+
+</style>
+</head><body>
+
+<br/>
+<img src="static/picture/dbtp.jpg">
+<br/>
+
+<div class="body-overlay"></div>
+<main>
+<section class="hero_area">
+<div class="container-fluid">
+<div class="row flex-row-reverse align-items-center">
+<div class="col-xl-7 col-lg-6 col-md-12">
+</div></div>
+<div class="col-xl-5 col-lg-6 col-md-12"><div class="hero_content"><div class="icon"></div>
+
+<br/>
+<br/>
+<p id="wpss" class="btbt1"> &#10063 网盘搜索.</p>
+<!--网盘搜索部分-->
+<div class="nrdiv1"
+onclick="window.open('https://www.niceso.fun/','_blank')">
+<br/>
+<p id="nrbt"> 奈斯搜索</p>
+<p id="nrjs">  阿里云盘资源搜索工具。</p>
+</div>
+<br/>
+
+<div class="nrdiv1"
+onclick="window.open('https://pan.qianfan.app/','_blank')">
+<br/>
+<p id="nrbt"> 千帆搜索</p>
+<p id="nrjs">  百度网盘、阿里云盘等云盘聚合资源搜索工具。</p>
+</div>
+<br/>
+
+<div class="nrdiv1"
+onclick="window.open('https://www.alipansou.com/','_blank')">
+<br/>
+<p id="nrbt"> 猫狸盘搜</p>
+<p id="nrjs"> 百度云盘、夸克网盘、天翼云盘等资源搜索工具。</p>
+</div>
+<br/>
+
+<div class="nrdiv1"
+onclick="window.open('https://www.upyunso.com//','_blank')">
+<br/>
+<p id="nrbt"> UP云搜</p>
+<p id="nrjs">学习资源、电子书、软件分享等资源搜索工具。</p>
+</div>
+<br/>
+
+<div class="nrdiv1"
+onclick="window.open('https://www.nmme.cc/','_blank')">
+<br/>
+<p id="nrbt"> 橘子盘搜</p>
+<p id="nrjs">影视资源、综艺节目、动漫等资源搜索工具。</p>
+</div>
+<br/>
+
+<div class="nrdiv1"
+onclick="window.open('https://u.gitcafe.net/','_blank')">
+<br/>
+<p id="nrbt"> 小纸条</p>
+<p id="nrjs">影视动漫、音乐、软件、文档等资源搜索工具。</p>
+</div>
+<br/>
+
+<div class="nrdiv1"
+onclick="window.open('https://www.xuebapan.com/','_blank')">
+<br/>
+<p id="nrbt"> 学霸盘</p>
+<p id="nrjs"> 考研、小说、英语、课程等网盘资源搜索工具。</p>
+</div>
+<br/>
+
+<div class="nrdiv1"
+onclick="window.open('https://www.xiaoso.net/m/index','_blank')">
+<br/>
+<p id="nrbt">小不点搜索</p>
+<p id="nrjs"> 正版资源搜索引擎，让资源搜索快如闪电。</p>
+</div>
+<br/>
+
+<div class="nrdiv1"
+onclick="window.open('https://www.dalipan.com/#/main/search?searchtype=1&restype=1','_blank')">
+<br/>
+<p id="nrbt">大力盘</p>
+<p id="nrjs"> 百度网盘、阿里网盘等网盘资源搜索工具。</p>
+</div>
+<br/>
+
+<div class="nrdiv1"
+onclick="window.open('https://www.dashengpan.com/#/main/search?searchtype=1&restype=1','_blank')">
+<br/>
+<p id="nrbt">大圣盘</p>
+<p id="nrjs"> 百度网盘、阿里网盘等网盘资源搜索工具。</p>
+</div>
+<br/>
+
+<div class="nrdiv1"
+onclick="window.open('https://www.xiaobaipan.com/','_blank')">
+<br/>
+<p id="nrbt">小白盘</p>
+<p id="nrjs">网盘资源搜索工具。</p>
+</div>
+<br/>
+
+<div class="nrdiv1"
+onclick="window.open('https://pansoso.com/','_blank')">
+<br/>
+<p id="nrbt">盘搜搜</p>
+<p id="nrjs">网盘资源搜索工具。</p>
+</div>
+<br/>
+
+<p id="ysxg" class="btbt1"> &#10063 影视相关.</p>
+<!--影视相关部分-->
+<div class="nrdiv1"
+onclick="window.open('https://www.cupfox.app/','_blank')">
+<br/>
+<p id="nrbt">茶杯狐</p>
+<p id="nrjs"> 影视资源聚合搜索、在线免费观看工具。</p>
+</div>
+<br/>
+
+<p id="bgzy" class="btbt1"> &#10063 办公资源.</p>
+<!--资源搜索部分-->
+<div class="nrdiv1"
+onclick="window.open('https://www.pptsupermarket.com/','_blank')">
+<br/>
+<p id="nrbt">PPT超级市场</p>
+<p id="nrjs"> 免费ppt模板下载与定制工具。</p>
+</div>
+<br/>
+
+<div class="nrdiv1"
+onclick="window.open('http://www.pptkj.net/','_blank')">
+<br/>
+<p id="nrbt">PPT课件网</p>
+<p id="nrjs">从小学到大学的ppt学习课件免费下载工具。</p>
+</div>
+<br/>
+
+<div class="nrdiv1"
+onclick="window.open('http://www.dxzy163.com/','_blank')">
+<br/>
+<p id="nrbt">大学资源网</p>
+<p id="nrjs">从小学到大学的视频课程免费学习工具。</p>
+</div>
+<br/>
+
+<div class="nrdiv1"
+onclick="window.open('https://m.bangongziyuan.com/','_blank')">
+<br/>
+<p id="nrbt">办公资源</p>
+<p id="nrjs">ppt、Excel、word等在线免费office模板工具。</p>
+</div>
+<br/>
+
+<div class="nrdiv1"
+onclick="window.open('https://www.52ppt.com/','_blank')">
+<br/>
+<p id="nrbt">PPT之家</p>
+<p id="nrjs"> 在线免费ppt模板、素材下载工具。 </p>
+</div>
+<br/>
+
+
+
+<br/>
+<hr/>
+<div>
+<p style="color: Grey;Font-size: 13px; text-align: center;">Copyright © Yajun 1652340032@qq.com 2022</p>
+</div>
+
+<div class="go-top">
+<i class="fa fa-chevron-up"></i>
+<i class="fa fa-chevron-up"></i>
+</div>
+<!--返回顶部-->
+
+
+<script type="text/javascript">
+    function jumpPage(searchValue) {
+      window.location.href="http://www.baidu.com/s?ie=UTF-8&wd="+searchValue;
+    }
+    // 按Enter键,执行事件
+    function entersearch(event){
+        if (event.keyCode == 13)
+        {
+            to();
+        }
+    }
+    // 按钮点击触发函数
+    function to(){
+        var searchValue = document.getElementById("searchInput").value;
+
+        //window.location.href="http://www.baidu.com/s?ie=UTF-8&wd="+searchValue;
+       jumpPage(searchValue);
+       //alert(searchValue);
+    }
+</script>
+
+<script data-cfasync="false" src="static/js/email-decode.min.js"></script><script src="static/js/jquery-3.5.1.min.js"></script>
+<script src="static/js/bootstrap.min.js"></script>
+<script src="static/js/owl.carousel.min.js"></script>
+<script src="static/js/jquery.appear.js"></script>
+<script src="static/js/slick.min.js"></script>
+<script src="static/js/jquery.ripples-min.js"></script>
+<script src="static/js/jquery.magnific-popup.min.js"></script>
+<script src="static/js/jquery.ajaxchimp.min.js"></script>
+<script src="static/js/form-validator.min.js"></script>
+<script src="static/js/main.js"></script>
+
+</body>
+</html>
