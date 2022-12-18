@@ -742,6 +742,46 @@ onclick="window.open('https://33.agilestudio.cn/')">
     }
 </script>
 
+
+<!--页面加锁部分-->
+<script>  
+ art()
+   function art() {
+   var a =""
+   var b=""
+   while (b != "15117663254") { //改为你自己的密码！
+     a = prompt("请输入访问口令!")
+   if(a=="15117663254")
+   {
+     b=a
+   alert("输入成功！")
+   return 0
+  }
+  if(a !="15117663254" && a!="")
+ {
+   if(a == null)
+   {
+     window.history.back();
+     location.reload();//强制刷新
+ 
+     window.location.go(-1); //强制跳转上一界面
+   }
+   else{
+   alert("口令错误！")
+   }
+ }
+ }
+   }
+</script>  
+
+
+
+
+
+
+
+
+
 <script data-cfasync="false" src="static/js/email-decode.min.js"></script><script src="static/js/jquery-3.5.1.min.js"></script>
 <script src="static/js/bootstrap.min.js"></script>
 <script src="static/js/owl.carousel.min.js"></script>
