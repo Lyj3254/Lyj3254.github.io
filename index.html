@@ -744,35 +744,29 @@ onclick="window.open('https://33.agilestudio.cn/')">
 
 
 <!--页面加锁部分-->
-<script>  
- art()
-   function art() {
-   var a =""
-   var b=""
-   while (b != "15117663254") { //改为你自己的密码！
-     a = prompt("请输入访问口令!")
-   if(a=="15117663254")
+<script>
+var a=0
+var b
+var c
+b=prompt("请输入访问账号");
+c=prompt("请输入访问口令");
+for(a;a<=1;)
+{
+   b=prompt("请输入访问账号");
+   c=prompt("请输入访问口令");
+   if(b=="liuyajun"&& c=="15117663254")
    {
-     b=a
-   alert("输入成功！")
-   return 0
-  }
-  if(a !="15117663254" && a!="")
- {
-   if(a == null)
-   {
-     window.history.back();
-     location.reload();//强制刷新
- 
-     window.location.go(-1); //强制跳转上一界面
+    a++
+    alert("欢迎访问刘亚军的个人网站！")
+    break
    }
    else{
-   alert("口令错误！")
+      alert("口令错误！")
+   continue
    }
- }
- }
-   }
-</script>  
+}
+</script>
+
 
 
 
